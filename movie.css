@@ -128,13 +128,19 @@ body {
 }
 
 /*
-  Reviews column (right inside the 2/3 card)
-  Takes the rest of the space
+  Reviews section wrapper
+  Now the entire review card is tan
 */
 .reviews-col {
   flex: 1;
   min-width: 0;
-  /* prevents weird overflow issues */
+
+  background: #E1D697;
+  /* moved tan here */
+  border-radius: 14px;
+  padding: 20px;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 /* Rotten Tomatoes score row */
@@ -178,7 +184,7 @@ body {
 
 .poster img {
   width: 100%;
-  height: 280px;
+  height: 300px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -189,23 +195,44 @@ body {
 }
 
 /*
-  Reviews area
+  Reviews grid (now just layout container)
 */
 .reviews-grid {
-  background: #E1D697;
-  padding: 16px;
-  border-radius: 10px;
+  background: transparent;
+  /* remove tan here */
+  padding: 0;
+  /* optional: cleaner spacing */
 }
 
+/*
+  Review cards
+  Update: subtle glow + softer background
+*/
 .review {
   float: left;
   width: 48%;
   margin-right: 4%;
   margin-bottom: 16px;
-  background: #fff;
+
+  background: #ffffff;
   border-radius: 8px;
   padding: 10px;
   min-height: 150px;
+
+  /* subtle glow effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+/* slight hover effect so cards feel interactive */
+.review:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.reviews-title {
+  font-size: 14pt;
+  margin-bottom: 12px;
 }
 
 .review:nth-child(2n) {
