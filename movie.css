@@ -73,52 +73,69 @@ body {
 
 /*
   Content layout
+  Update: flex row so left card is 2/3 and sidebar is 1/3
 */
 .panel {
   width: 100%;
   background: transparent;
   border: none;
   padding: 0;
+
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
 }
 
 /*
-  Sidebar fixed width
+  Sidebar (right 1/3)
 */
 .sidebar {
-  float: right;
-  width: 320px;
+  flex: 1;
   background: #A2B964;
   padding: 16px;
-  border-radius: 8px;
+  border-radius: 12px;
   font-family: Arial, sans-serif;
 }
 
 /*
-  Left content takes remaining space
+  Left side (2/3)
+  This is the big card that holds: score + posters (left) and reviews (right)
 */
 .left-col {
-  float: left;
-  width: calc(100% - 360px);
+  flex: 2;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 18px;
 }
 
 /*
-  Inner content wrapper
+  Left-inner layout
+  Update: keep the original "two columns inside the left card"
+  media-col = posters/score, reviews-col = review cards
 */
 .left-inner {
-  padding-right: 20px;
+  display: flex;
+  gap: 20px;
+  /* space between posters section and reviews section */
 }
 
 /*
-  Media + Reviews split
+  Posters/score column (left inside the 2/3 card)
 */
 .media-col {
-  float: left;
   width: 320px;
+  /* same idea as before */
+  flex: 0 0 320px;
 }
 
+/*
+  Reviews column (right inside the 2/3 card)
+  Takes the rest of the space
+*/
 .reviews-col {
-  float: right;
-  width: calc(100% - 340px);
+  flex: 1;
+  min-width: 0;
+  /* prevents weird overflow issues */
 }
 
 /* Rotten Tomatoes score row */
@@ -209,7 +226,7 @@ body {
 
 .stars img {
   width: 29px;
-  height: 28x;
+  height: 28px;
 }
 
 .score-mini {
