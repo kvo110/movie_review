@@ -1,85 +1,58 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
-<!--
-  joker.html
-  Assignment 2 - Joker: Folie à Deux review page
-
-  Notes for submission:
-  - XHTML 1.1 (all tags closed, lowercase tags, images self-close)
-  - Layout is handled in movie.css
-  - Banner image is set in CSS (assets/banner.png)
-  - Favicon uses assets/favicon.png
--->
-
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
   <title>MMR - Joker: Folie à Deux Review</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-  <!-- Main stylesheet -->
   <link rel="stylesheet" type="text/css" href="movie.css" />
-
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/favicon.png" />
 </head>
 
 <body>
-  <!-- Wrapper (used for structure; styling handled in CSS) -->
   <div class="page" id="top">
 
-    <!-- Top banner (background image in CSS) -->
     <div class="banner">
       <div class="banner-inner">
         <h1>Joker: Folie à Deux (2024)</h1>
       </div>
     </div>
 
-    <!-- Main content area -->
     <div class="main">
       <div class="panel">
 
-        <!-- Left side: score + posters + reviews -->
         <div class="left-col">
           <div class="left-inner">
 
-            <!-- Left strip: Rotten score + posters -->
+            <!-- Score + Posters -->
             <div class="media-col">
-
-              <!-- Score row -->
               <div class="score">
                 <img class="tomato" src="assets/rottenbig.png" alt="Rotten Tomatoes" />
-                <span class="percent">32%</span>
+                <span class="percent">31%</span>
                 <div class="clearfix"></div>
               </div>
 
-              <!-- Poster grid (3 across) -->
               <div class="poster-grid">
                 <div class="poster">
                   <img src="assets/poster1.png" alt="Official poster 1" />
                   <p>Official Poster 1</p>
                 </div>
-
                 <div class="poster">
                   <img src="assets/poster2.png" alt="Teaser poster" />
                   <p>Teaser Poster</p>
                 </div>
-
                 <div class="poster">
                   <img src="assets/poster3.png" alt="Character poster - Joker" />
                   <p>Character Poster - Joker</p>
                 </div>
-
                 <div class="poster">
                   <img src="assets/poster4.png" alt="Character poster - Arthur" />
                   <p>Character Poster - Arthur</p>
                 </div>
-
                 <div class="poster">
                   <img src="assets/poster5.png" alt="Character poster - Harley" />
                   <p>Character Poster - Harley</p>
                 </div>
-
                 <div class="poster">
                   <img src="assets/poster6.png" alt="Official poster 2" />
                   <p>Official Poster 2</p>
@@ -87,7 +60,7 @@
               </div>
             </div>
 
-            <!-- Right strip: review cards -->
+            <!-- Reviews -->
             <div class="reviews-col">
               <h2 class="reviews-title">Critic Reviews</h2>
               <div class="reviews-grid">
@@ -95,20 +68,19 @@
                 <!-- Review 1 -->
                 <div class="review">
                   <p class="quote">
-                    “A mesmerizing yet deeply flawed sequel that struggles to find its footing, even with electric
-                    leads.”
+                    “Folie à Deux is a far less morally quarrelsome film, which makes it both less interesting and a
+                    sight more enjoyable — if you like the songs.”
                   </p>
-                  <p class="critic"><em>David Ehrlich,<br /> IndieWire</em></p>
-
+                  <p class="critic"><em>Jessica Kiang,<br /> Sight &amp; Sound</em></p>
                   <div class="review-foot">
-                    <div class="stars" aria-label="2 out of 5 stars">
+                    <div class="stars">
                       <img src="assets/star_full.png" alt="Star" />
                       <img src="assets/star_full.png" alt="Star" />
-                      <img src="assets/star_empty.png" alt="Empty star" />
+                      <img src="assets/star_nonfull.png" alt="Star" />
                       <img src="assets/star_empty.png" alt="Empty star" />
                       <img src="assets/star_empty.png" alt="Empty star" />
                     </div>
-                    <span class="score-mini">2/5</span>
+                    <span class="score-mini">2.5/4</span>
                     <div class="clearfix"></div>
                   </div>
                 </div>
@@ -116,12 +88,11 @@
                 <!-- Review 2 -->
                 <div class="review">
                   <p class="quote">
-                    “A daring experiment that doesn’t quite pay off. The chemistry is there, but the plot wanders.”
+                    “Folie à Deux is a punishingly dull affair. A pointless sequel with very little plot.”
                   </p>
-                  <p class="critic"><em>Justin Chang,<br /> Los Angeles Times</em></p>
-
+                  <p class="critic"><em>Esther Zuckerman,<br /> Bloomberg News</em></p>
                   <div class="review-foot">
-                    <div class="stars" aria-label="2 out of 5 stars">
+                    <div class="stars">
                       <img src="assets/star_full.png" alt="Star" />
                       <img src="assets/star_full.png" alt="Star" />
                       <img src="assets/star_empty.png" alt="Empty star" />
@@ -136,19 +107,18 @@
                 <!-- Review 3 -->
                 <div class="review">
                   <p class="quote">
-                    “Visually stunning but narratively hollow. The attempt to blend grit with fantasy falls flat.”
+                    “Not enough happens in Folie à Deux.”
                   </p>
-                  <p class="critic"><em>Peter Debruge,<br /> Variety</em></p>
-
+                  <p class="critic"><em>David Rooney,<br /> The Hollywood Reporter</em></p>
                   <div class="review-foot">
-                    <div class="stars" aria-label="2.5 out of 4 stars">
+                    <div class="stars">
                       <img src="assets/star_full.png" alt="Star" />
                       <img src="assets/star_full.png" alt="Star" />
-                      <img src="assets/star_nonfull.png" alt="Star" />
+                      <img src="assets/star_empty.png" alt="Empty star" />
                       <img src="assets/star_empty.png" alt="Empty star" />
                       <img src="assets/star_empty.png" alt="Empty star" />
                     </div>
-                    <span class="score-mini">2.5/4</span>
+                    <span class="score-mini">2/5</span>
                     <div class="clearfix"></div>
                   </div>
                 </div>
@@ -156,19 +126,19 @@
                 <!-- Review 4 -->
                 <div class="review">
                   <p class="quote">
-                    “A beautifully shot, emotionally frustrating experience. It’s a film at war with itself.”
+                    “It seems Phillips wants to comment on what’s become entertainment in a TMZ world where tabloid
+                    stories and social media dominate interest… yet the film feels narratively a bit thin.”
                   </p>
-                  <p class="critic"><em>Robbie Collin,<br /> The Telegraph</em></p>
-
+                  <p class="critic"><em>Pete Hammond,<br /> Deadline Hollywood Daily</em></p>
                   <div class="review-foot">
-                    <div class="stars" aria-label="2.5 out of 4 stars">
+                    <div class="stars">
                       <img src="assets/star_full.png" alt="Star" />
                       <img src="assets/star_full.png" alt="Star" />
                       <img src="assets/star_nonfull.png" alt="Star" />
                       <img src="assets/star_empty.png" alt="Empty star" />
                       <img src="assets/star_empty.png" alt="Empty star" />
                     </div>
-                    <span class="score-mini">2.5/4</span>
+                    <span class="score-mini">2.5/5</span>
                     <div class="clearfix"></div>
                   </div>
                 </div>
@@ -176,19 +146,19 @@
                 <!-- Review 5 -->
                 <div class="review">
                   <p class="quote">
-                    “An ambitious misfire. Strong performances can’t hide that the film lacks raw power.”
+                    “Phillips is less interested in commenting on society than in cooling down society’s temper — a
+                    choice that leaves the audience distanced.”
                   </p>
-                  <p class="critic"><em>Manohla Dargis,<br /> The New York Times</em></p>
-
+                  <p class="critic"><em>Luke Hicks,<br /> The Film Stage</em></p>
                   <div class="review-foot">
-                    <div class="stars" aria-label="C plus grade">
+                    <div class="stars">
                       <img src="assets/star_full.png" alt="Star" />
-                      <img src="assets/star_full.png" alt="Empty star" />
+                      <img src="assets/star_full.png" alt="Star" />
                       <img src="assets/star_empty.png" alt="Empty star" />
                       <img src="assets/star_empty.png" alt="Empty star" />
                       <img src="assets/star_empty.png" alt="Empty star" />
                     </div>
-                    <span class="score-mini">C+</span>
+                    <span class="score-mini">2/5</span>
                     <div class="clearfix"></div>
                   </div>
                 </div>
@@ -196,15 +166,15 @@
                 <!-- Review 6 -->
                 <div class="review">
                   <p class="quote">
-                    “A polarizing and provocative piece of cinema. It will divide audiences, but it commits.”
+                    “Seeking a minority opinion? Here’s one: Joker: Folie à Deux is superior to 2019's Joker in just
+                    about every way.”
                   </p>
-                  <p class="critic"><em>Stephanie Zacharek,<br /> Time</em></p>
-
+                  <p class="critic"><em>Matt Brunson,<br /> Film Frenzy</em></p>
                   <div class="review-foot">
-                    <div class="stars" aria-label="C plus grade">
+                    <div class="stars">
                       <img src="assets/star_full.png" alt="Star" />
-                      <img src="assets/star_empty.png" alt="Empty star" />
-                      <img src="assets/star_empty.png" alt="Empty star" />
+                      <img src="assets/star_full.png" alt="Star" />
+                      <img src="assets/star_nonfull.png" alt="Star" />
                       <img src="assets/star_empty.png" alt="Empty star" />
                       <img src="assets/star_empty.png" alt="Empty star" />
                     </div>
@@ -213,14 +183,51 @@
                   </div>
                 </div>
 
+                <!-- Review 7 -->
+                <div class="review">
+                  <p class="quote">
+                    “A punishingly dull affair and a pointless sequel with very little plot.”
+                  </p>
+                  <p class="critic"><em>Esther Zuckerman,<br /> Bloomberg News</em></p>
+                  <div class="review-foot">
+                    <div class="stars">
+                      <img src="assets/star_full.png" alt="Star" />
+                      <img src="assets/star_full.png" alt="Star" />
+                      <img src="assets/star_empty.png" alt="Empty star" />
+                      <img src="assets/star_empty.png" alt="Empty star" />
+                      <img src="assets/star_empty.png" alt="Empty star" />
+                    </div>
+                    <span class="score-mini">2/5</span>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+
+                <!-- Review 8 -->
+                <div class="review">
+                  <p class="quote">
+                    “Not enough happens in Folie à Deux, leaving the film feeling slow and dramatically thin.”
+                  </p>
+                  <p class="critic"><em>David Rooney,<br /> The Hollywood Reporter</em></p>
+                  <div class="review-foot">
+                    <div class="stars">
+                      <img src="assets/star_full.png" alt="Star" />
+                      <img src="assets/star_full.png" alt="Star" />
+                      <img src="assets/star_empty.png" alt="Empty star" />
+                      <img src="assets/star_empty.png" alt="Empty star" />
+                      <img src="assets/star_empty.png" alt="Empty star" />
+                    </div>
+                    <span class="score-mini">2/5</span>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+
               </div>
             </div>
 
-            <div class="clearfix"></div>
           </div>
         </div>
 
-        <!-- Sidebar: movie details -->
+        <!-- Sidebar -->
         <div class="sidebar">
           <div class="side-block">
             <h2>Movie Details</h2>
@@ -247,33 +254,25 @@
             <p><span class="label">Budget:</span> $200 million (estimated)</p>
             <p><span class="label">Box Office:</span> TBD</p>
 
-            <!-- Social media links (centered icons instead of text letters) -->
             <div class="social">
-              <a href="#" title="Facebook">
-                <img src="assets/facebook.png" alt="Facebook" />
-              </a>
-
-              <a href="#" title="X">
-                <img src="assets/x.png" alt="X (Twitter)" />
-              </a>
-
-              <a href="#" title="Instagram">
-                <img src="assets/instagram.png" alt="Instagram" />
-              </a>
+              <a href="#"><img src="assets/facebook.png" alt="Facebook" /></a>
+              <a href="#"><img src="assets/x.png" alt="X" /></a>
+              <a href="#"><img src="assets/instagram.png" alt="Instagram" /></a>
             </div>
 
-            <a class="watch-btn" href="https://www.youtube.com/watch?v=_OKAwz2MsJs" title="Watch Trailer" target="_blank"
-              rel="noopener noreferrer">Watch Trailer</a>
+            <a class="watch-btn" href="https://www.youtube.com/watch?v=_OKAwz2MsJs" target="_blank"
+              rel="noopener noreferrer">
+              Watch Trailer
+            </a>
           </div>
         </div>
 
-        <div class="clearfix"></div>
       </div>
 
-      <!-- Bottom stats bar -->
-      <div class="bottom-bar" role="contentinfo">
-        Total Reviews: 248 | Fresh: 79 | Rotten: 169
+      <div class="bottom-bar">
+        Total Reviews: 300+ | Fresh: 31% | Rotten: 69%
       </div>
+
     </div>
   </div>
 </body>
