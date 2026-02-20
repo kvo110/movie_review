@@ -1,0 +1,10 @@
+Web Programming HW 2
+
+
+* Name: Huy (Kenny) G. Vo
+* Codd Server URL: https://codd.cs.gsu.edu/~hvo30/WP/HW/movie_review/joker.html
+* GitHub Repo Link: https://github.com/kvo110/movie_review
+
+Note:
+  - I was having issues with fitting things into the layout guidelines of 800px,
+  instead had it flex based on the browser screen with rational sizing to the mock
