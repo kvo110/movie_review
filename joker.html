@@ -1,210 +1,279 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
 <!--
   joker.html
-  CSS Mastery Assignment 2
-  Joker: Folie à Deux (2024) Review Page
-  Notes:
-  - XHTML 1.1 markup (keep tags lowercase, close everything, self-close imgs/br)
-  - Banner title is inside banner.png, so no extra page heading text
+  Assignment 2 - Joker: Folie à Deux review page
+
+  Notes for submission:
+  - XHTML 1.1 (all tags closed, lowercase tags, images self-close)
+  - Layout is handled in movie.css
+  - Banner image is set in CSS (assets/banner.png)
+  - Favicon uses assets/favicon.png
 -->
+
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
   <title>MMR - Joker: Folie à Deux Review</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- Main stylesheet -->
   <link rel="stylesheet" type="text/css" href="movie.css" />
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
 </head>
 
 <body>
+  <!-- Wrapper (used for structure; styling handled in CSS) -->
   <div class="page" id="top">
-    <div class="banner" role="banner">
-      <span class="sr-only">Joker: Folie à Deux (2024)</span>
+
+    <!-- Top banner (background image in CSS) -->
+    <div class="banner">
+      <div class="banner-inner">
+        <h1>Joker: Folie à Deux (2024)</h1>
+      </div>
     </div>
 
-    <div class="content" role="main">
-      <div class="left-col">
-        <div class="rating-box">
-          <img class="tomato" src="assets/rottenbig.png" alt="Rotten Tomatoes" />
-          <div class="rating-text">
-            <span class="rating-num">32%</span>
+    <!-- Main content area -->
+    <div class="main">
+      <div class="panel">
+
+        <!-- Left side: score + posters + reviews -->
+        <div class="left-col">
+          <div class="left-inner">
+
+            <!-- Left strip: Rotten score + posters -->
+            <div class="media-col">
+
+              <!-- Score row -->
+              <div class="score">
+                <img class="tomato" src="assets/rottenbig.png" alt="Rotten Tomatoes" />
+                <span class="percent">32%</span>
+                <div class="clearfix"></div>
+              </div>
+
+              <!-- Poster grid (3 across) -->
+              <div class="poster-grid">
+                <div class="poster">
+                  <img src="assets/poster1.png" alt="Official poster 1" />
+                  <p>Official Poster 1</p>
+                </div>
+
+                <div class="poster">
+                  <img src="assets/poster2.png" alt="Teaser poster" />
+                  <p>Teaser Poster</p>
+                </div>
+
+                <div class="poster">
+                  <img src="assets/poster3.png" alt="Character poster - Joker" />
+                  <p>Character Poster - Joker</p>
+                </div>
+
+                <div class="poster">
+                  <img src="assets/poster4.png" alt="Character poster - Arthur" />
+                  <p>Character Poster - Arthur</p>
+                </div>
+
+                <div class="poster">
+                  <img src="assets/poster5.png" alt="Character poster - Harley" />
+                  <p>Character Poster - Harley</p>
+                </div>
+
+                <div class="poster">
+                  <img src="assets/poster6.png" alt="Official poster 2" />
+                  <p>Official Poster 2</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right strip: review cards -->
+            <div class="reviews-col">
+              <div class="reviews-grid">
+
+                <!-- Review 1 -->
+                <div class="review">
+                  <p class="quote">
+                    “A mesmerizing yet deeply flawed sequel that struggles to find its footing, even with electric
+                    leads.”
+                  </p>
+                  <p class="critic"><em>David Ehrlich,<br /> IndieWire</em></p>
+
+                  <div class="review-foot">
+                    <div class="stars" aria-label="2 out of 5 stars">
+                      <img src="assets/star_full.png" alt="Star" />
+                      <img src="assets/star_full.png" alt="Star" />
+                      <img src="assets/star_empty.png" alt="Empty star" />
+                      <img src="assets/star_empty.png" alt="Empty star" />
+                      <img src="assets/star_empty.png" alt="Empty star" />
+                    </div>
+                    <span class="score-mini">2/5</span>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review">
+                  <p class="quote">
+                    “A daring experiment that doesn’t quite pay off. The chemistry is there, but the plot wanders.”
+                  </p>
+                  <p class="critic"><em>Justin Chang,<br /> Los Angeles Times</em></p>
+
+                  <div class="review-foot">
+                    <div class="stars" aria-label="2 out of 5 stars">
+                      <img src="assets/star_full.png" alt="Star" />
+                      <img src="assets/star_full.png" alt="Star" />
+                      <img src="assets/star_empty.png" alt="Empty star" />
+                      <img src="assets/star_empty.png" alt="Empty star" />
+                      <img src="assets/star_empty.png" alt="Empty star" />
+                    </div>
+                    <span class="score-mini">2/5</span>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review">
+                  <p class="quote">
+                    “Visually stunning but narratively hollow. The attempt to blend grit with fantasy falls flat.”
+                  </p>
+                  <p class="critic"><em>Peter Debruge,<br /> Variety</em></p>
+
+                  <div class="review-foot">
+                    <div class="stars" aria-label="2.5 out of 4 stars">
+                      <img src="assets/star_full.png" alt="Star" />
+                      <img src="assets/star_full.png" alt="Star" />
+                      <img src="assets/star_nonfull.png" alt="Star" />
+                      <img src="assets/star_empty.png" alt="Empty star" />
+                      <img src="assets/star_empty.png" alt="Empty star" />
+                    </div>
+                    <span class="score-mini">2.5/4</span>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="review">
+                  <p class="quote">
+                    “A beautifully shot, emotionally frustrating experience. It’s a film at war with itself.”
+                  </p>
+                  <p class="critic"><em>Robbie Collin,<br /> The Telegraph</em></p>
+
+                  <div class="review-foot">
+                    <div class="stars" aria-label="2.5 out of 4 stars">
+                      <img src="assets/star_full.png" alt="Star" />
+                      <img src="assets/star_full.png" alt="Star" />
+                      <img src="assets/star_nonfull.png" alt="Star" />
+                      <img src="assets/star_empty.png" alt="Empty star" />
+                      <img src="assets/star_empty.png" alt="Empty star" />
+                    </div>
+                    <span class="score-mini">2.5/4</span>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+
+                <!-- Review 5 -->
+                <div class="review">
+                  <p class="quote">
+                    “An ambitious misfire. Strong performances can’t hide that the film lacks raw power.”
+                  </p>
+                  <p class="critic"><em>Manohla Dargis,<br /> The New York Times</em></p>
+
+                  <div class="review-foot">
+                    <div class="stars" aria-label="C plus grade">
+                      <img src="assets/star_full.png" alt="Star" />
+                      <img src="assets/star_full.png" alt="Empty star" />
+                      <img src="assets/star_empty.png" alt="Empty star" />
+                      <img src="assets/star_empty.png" alt="Empty star" />
+                      <img src="assets/star_empty.png" alt="Empty star" />
+                    </div>
+                    <span class="score-mini">C+</span>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+
+                <!-- Review 6 -->
+                <div class="review">
+                  <p class="quote">
+                    “A polarizing and provocative piece of cinema. It will divide audiences, but it commits.”
+                  </p>
+                  <p class="critic"><em>Stephanie Zacharek,<br /> Time</em></p>
+
+                  <div class="review-foot">
+                    <div class="stars" aria-label="C plus grade">
+                      <img src="assets/star_full.png" alt="Star" />
+                      <img src="assets/star_empty.png" alt="Empty star" />
+                      <img src="assets/star_empty.png" alt="Empty star" />
+                      <img src="assets/star_empty.png" alt="Empty star" />
+                      <img src="assets/star_empty.png" alt="Empty star" />
+                    </div>
+                    <span class="score-mini">C+</span>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
           </div>
         </div>
 
-        <div class="reviews-area">
-          <div class="reviews-col reviews-col-left">
-            <div class="review">
-              <p class="quote">
-                “A bold, uncomfortable sequel that leans into chaos and still finds moments of strange beauty.”
-              </p>
-              <div class="stars" aria-label="3 out of 5 stars">
-                <img src="assets/star_full.png" alt="Star" />
-                <img src="assets/star_full.png" alt="Star" />
-                <img src="assets/star_full.png" alt="Star" />
-                <img src="assets/star_nonfull.png" alt="Empty star" />
-                <img src="assets/star_nonfull.png" alt="Empty star" />
-              </div>
-              <p class="critic"><em>Sarah Mitchell, The Hollywood Reporter</em></p>
-            </div>
-
-            <div class="review">
-              <p class="quote">
-                “Visually hypnotic, but the story drifts just when it needs to bite the hardest.”
-              </p>
-              <div class="stars" aria-label="2 out of 5 stars">
-                <img src="assets/star_full.png" alt="Star" />
-                <img src="assets/star_full.png" alt="Star" />
-                <img src="assets/star_nonfull.png" alt="Empty star" />
-                <img src="assets/star_nonfull.png" alt="Empty star" />
-                <img src="assets/star_nonfull.png" alt="Empty star" />
-              </div>
-              <p class="critic"><em>Daniel Reyes, Indie Film Digest</em></p>
-            </div>
-
-            <div class="review">
-              <p class="quote">
-                “It’s messy, daring, and sometimes brilliant, even when it stumbles over its own ambition.”
-              </p>
-              <div class="stars" aria-label="3 out of 5 stars">
-                <img src="assets/star_full.png" alt="Star" />
-                <img src="assets/star_full.png" alt="Star" />
-                <img src="assets/star_full.png" alt="Star" />
-                <img src="assets/star_nonfull.png" alt="Empty star" />
-                <img src="assets/star_nonfull.png" alt="Empty star" />
-              </div>
-              <p class="critic"><em>Jamie Park, ScreenTalk Weekly</em></p>
-            </div>
+        <!-- Sidebar: movie details -->
+        <div class="sidebar">
+          <div class="side-block">
+            <h2>Movie Details</h2>
+            <p><span class="label">Director:</span> Todd Phillips</p>
+            <p><span class="label">Writers:</span> Scott Silver, Todd Phillips</p>
+            <p><span class="label">Release Date:</span> October 4, 2024</p>
+            <p><span class="label">Runtime:</span> 2h 18m</p>
+            <p><span class="label">Genre:</span> Crime, Drama, Musical, Thriller</p>
+            <p><span class="label">Rating:</span> R</p>
           </div>
 
-          <div class="reviews-col reviews-col-right">
-            <div class="review">
-              <p class="quote">
-                “An eerie character study with sharp performances, even if the pacing occasionally sags.”
-              </p>
-              <div class="stars" aria-label="3 out of 5 stars">
-                <img src="assets/star_full.png" alt="Star" />
-                <img src="assets/star_full.png" alt="Star" />
-                <img src="assets/star_full.png" alt="Star" />
-                <img src="assets/star_nonfull.png" alt="Empty star" />
-                <img src="assets/star_nonfull.png" alt="Empty star" />
-              </div>
-              <p class="critic"><em>Leah Brooks, City Cinema Journal</em></p>
-            </div>
-
-            <div class="review">
-              <p class="quote">
-                “The mood is unforgettable, but the script repeats itself like a punchline that won’t land.”
-              </p>
-              <div class="stars" aria-label="2 out of 5 stars">
-                <img src="assets/star_full.png" alt="Star" />
-                <img src="assets/star_full.png" alt="Star" />
-                <img src="assets/star_nonfull.png" alt="Empty star" />
-                <img src="assets/star_nonfull.png" alt="Empty star" />
-                <img src="assets/star_nonfull.png" alt="Empty star" />
-              </div>
-              <p class="critic"><em>Omar Grant, The Reel Review</em></p>
-            </div>
-
-            <div class="review">
-              <p class="quote">
-                “A daring swing that trades comfort for tension, and it’s stronger whenever it goes quiet.”
-              </p>
-              <div class="stars" aria-label="3 out of 5 stars">
-                <img src="assets/star_full.png" alt="Star" />
-                <img src="assets/star_full.png" alt="Star" />
-                <img src="assets/star_full.png" alt="Star" />
-                <img src="assets/star_nonfull.png" alt="Empty star" />
-                <img src="assets/star_nonfull.png" alt="Empty star" />
-              </div>
-              <p class="critic"><em>Nina Patel, Midnight Movie Club</em></p>
-            </div>
+          <div class="side-block">
+            <h2>Cast &amp; Crew</h2>
+            <p><span class="label">Joaquin Phoenix</span> as Arthur Fleck / Joker</p>
+            <p><span class="label">Lady Gaga</span> as Harleen Quinzel / Harley</p>
+            <p><span class="label">Zazie Beetz</span> as Sophie Dumond</p>
+            <p><span class="label">Brendan Gleeson</span></p>
+            <p><span class="label">Catherine Keener</span></p>
           </div>
 
-          <div class="clearfix"></div>
+          <div class="side-block">
+            <h2>Information</h2>
+            <p><span class="label">Studio:</span> Warner Bros. Pictures</p>
+            <p><span class="label">Budget:</span> $200 million (estimated)</p>
+            <p><span class="label">Box Office:</span> TBD</p>
+
+            <!-- Social media links (centered icons instead of text letters) -->
+            <div class="social">
+              <a href="#" title="Facebook">
+                <img src="assets/facebook.png" alt="Facebook" />
+              </a>
+
+              <a href="#" title="X">
+                <img src="assets/x.png" alt="X (Twitter)" />
+              </a>
+
+              <a href="#" title="Instagram">
+                <img src="assets/instagram.png" alt="Instagram" />
+              </a>
+            </div>
+
+            <a class="watch-btn" href="https://www.youtube.com/watch?v=_OKAwz2MsJs" title="Watch Trailer" target="_blank"
+              rel="noopener noreferrer">Watch Trailer</a>
+          </div>
         </div>
+
+        <div class="clearfix"></div>
       </div>
 
-      <div class="sidebar" role="complementary" aria-label="Movie information sidebar">
-        <div class="side-section">
-          <h2>Movie Details</h2>
-          <dl>
-            <dt>Director</dt>
-            <dd>Todd Phillips</dd>
-
-            <dt>Writers</dt>
-            <dd>Todd Phillips, Scott Silver</dd>
-
-            <dt>Release Date</dt>
-            <dd>2024</dd>
-
-            <dt>Runtime</dt>
-            <dd>2h 18m</dd>
-
-            <dt>Genre</dt>
-            <dd>Psychological Thriller, Drama</dd>
-
-            <dt>Rating</dt>
-            <dd>R</dd>
-          </dl>
-        </div>
-
-        <div class="side-section">
-          <h2>Cast &amp; Crew</h2>
-          <dl>
-            <dt>Joaquin Phoenix</dt>
-            <dd>Arthur Fleck</dd>
-
-            <dt>Lady Gaga</dt>
-            <dd>Harley Quinn</dd>
-
-            <dt>Zazie Beetz</dt>
-            <dd>Sophie Dumond</dd>
-
-            <dt>Brendan Gleeson</dt>
-            <dd>Supporting Role</dd>
-          </dl>
-        </div>
-
-        <div class="side-section">
-          <h2>Information</h2>
-          <dl>
-            <dt>Studio</dt>
-            <dd>Warner Bros.</dd>
-
-            <dt>Budget</dt>
-            <dd>$100M (reported)</dd>
-
-            <dt>Box Office</dt>
-            <dd>TBD</dd>
-          </dl>
-
-          <div class="social">
-            <a class="social-link" href="#" title="Facebook" aria-label="Facebook">Fb</a>
-            <a class="social-link" href="#" title="Twitter" aria-label="Twitter">X</a>
-            <a class="social-link" href="#" title="Instagram" aria-label="Instagram">Ig</a>
-          </div>
-
-          <a class="trailer-btn" href="#" title="Watch Trailer">Watch Trailer</a>
-        </div>
+      <!-- Bottom stats bar -->
+      <div class="bottom-bar" role="contentinfo">
+        Total Reviews: 248 | Fresh: 79 | Rotten: 169
       </div>
-
-      <div class="clearfix"></div>
     </div>
-
-    <div class="bottom-bar" role="contentinfo">
-      Total Reviews: 248 &#124; Fresh: 79 &#124; Rotten: 169
-    </div>
-  </div>
-
-  <div class="validators">
-    <a href="https://validator.w3.org/" title="Validate XHTML">
-      <img src="assets/w3c-html.png" alt="W3C XHTML Validator" />
-    </a>
-    <a href="https://jigsaw.w3.org/css-validator/" title="Validate CSS">
-      <img src="assets/w3c-css.png" alt="W3C CSS Validator" />
-    </a>
   </div>
 </body>
 
