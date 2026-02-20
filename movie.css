@@ -195,33 +195,36 @@ body {
 }
 
 /*
-  Reviews grid (now just layout container)
+  Reviews grid layout
+  Make all review cards equal height
 */
 .reviews-grid {
-  background: transparent;
-  /* remove tan here */
-  padding: 0;
-  /* optional: cleaner spacing */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 /*
-  Review cards
-  Update: subtle glow + softer background
+  Individual review cards
+  Now equal height
 */
 .review {
-  float: left;
-  width: 48%;
-  margin-right: 4%;
-  margin-bottom: 16px;
-
+  flex: 1 1 calc(50% - 8px);
+  /* two per row */
   background: #ffffff;
   border-radius: 8px;
-  padding: 10px;
-  min-height: 150px;
+  padding: 14px;
 
-  /* subtle glow effect */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* pushes stars to bottom */
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.review-foot {
+  margin-top: auto;
 }
 
 /* slight hover effect so cards feel interactive */
